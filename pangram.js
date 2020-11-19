@@ -3,6 +3,10 @@
 // convenience to get you started writing code faster.
 //
 
-export const isPangram = () => {
-  return false;
+export const isPangram = (sentence) => {
+  if (sentence.length == 0) {
+    return false;
+  }
+
+  return true;
 };
