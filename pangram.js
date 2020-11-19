@@ -8,5 +8,15 @@ export const isPangram = (sentence) => {
     return false;
   }
 
-  return true;
+  let result = true;
+
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  [...alphabet].forEach((letter) => {
+    if (!sentence.includes(letter)) {
+      result = false;
+    }
+  });
+
+  return result;
 };
