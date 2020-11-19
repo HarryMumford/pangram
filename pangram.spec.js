@@ -39,11 +39,11 @@ describe("Pangram()", () => {
     );
   });
 
-  xtest("mixed case and punctuation", () => {
+  test("mixed case and punctuation", () => {
     expect(isPangram('"Five quacking Zephyrs jolt my wax bed."')).toBe(true);
   });
 
-  xtest("case insensitive", () => {
+  test("case insensitive", () => {
     expect(isPangram("the quick brown fox jumps over with lazy FX")).toBe(
       false
     );

@@ -4,16 +4,14 @@
 //
 
 export const isPangram = (sentence) => {
-  if (sentence.length == 0) {
-    return false;
-  }
-
   let result = true;
 
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
   [...alphabet].forEach((letter) => {
-    if (!sentence.includes(letter)) {
+    const isInSentence = sentence.toLowerCase().includes(letter);
+
+    if (!isInSentence) {
       result = false;
     }
   });
